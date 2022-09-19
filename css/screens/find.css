@@ -14,16 +14,11 @@
   text-align: center;
   color: var(--color-grey-text);
 }
-.open-chat {
-  padding: 15px 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-}
-
 .open-chat__header {
   display: flex;
   justify-content: space-between;
   opacity: 0.8;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 .open-chat__header span {
   opacity: 0.6;
@@ -32,6 +27,9 @@
 .open-post {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .open-post__title {
   font-weight: 600;
