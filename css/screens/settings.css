@@ -9,8 +9,35 @@
 .settings__setting i {
   margin-right: 20px;
   font-size: 22px;
-  opacity: 0.8;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
 }
 .settings__setting-column:last-child {
   opacity: 0.5;
+}
+
+@keyframes iconFlip {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: var(--yellow);
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.settings__setting:hover i {
+  will-change: transform;
+  animation: iconFlip 1s linear;
+}
+.settings__setting:hover {
+  color: var(--yellow);
+}
+
+.settings__setting:hover .settings__setting-column:last-child {
+  opacity: 0.5;
+  color: #2363ee;
 }
