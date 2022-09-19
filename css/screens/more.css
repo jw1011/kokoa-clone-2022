@@ -18,8 +18,8 @@
 }
 .more-suggestions__icons {
   display: flex;
-  text-align: center;
 }
+
 .more-suggestions__icon {
   margin-right: 30px;
   display: flex;
@@ -39,4 +39,7 @@
 .more-suggestions__icon-image i {
   font-size: 32px;
   color: white;
+}
+.more-suggestions__icon-text {
+  text-align: center;
 }
